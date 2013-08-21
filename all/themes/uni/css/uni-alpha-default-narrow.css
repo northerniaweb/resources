@@ -385,13 +385,13 @@ h2.block-title {
 }
 
 .front .zone-content .block-uni-news-announcements-block h2.block-title a.inside-uni-button {
-    background:url(images/btn-inside-UNI.png) no-repeat scroll 0 0 transparent;
-    width: 104px;
-    height: 24px;
+    background:url(images/InsideUNI-sm.png) no-repeat scroll 0 0 transparent;
+    width: 101px;
+    height: 18px;
     display: block;
     float: left;
     text-indent: -9999px;
-    margin: -4px 5px 0 0;
+    margin: -2px 5px 0 0;
     padding: 0;
 }
 

@@ -60,14 +60,14 @@ p a:hover {text-decoration: underline;}
 
 h2.block-title,
 h3.inside-uni-title {
-	margin-bottom:20px;
-	padding:20px 0 10px;
+	margin-bottom:0px;
+	padding:0px 0 10px;
 	border-bottom:1px solid #d5d5d5;
 	color:#4c4c4c;
 	text-transform:uppercase;
 	font-size:1.4em;
 	font-family:'droid_sansregular';
-}
+	}
 
 
 
@@ -162,7 +162,7 @@ h1#page-title.title {
 }*/
 
 .front .region-preface-first-inner .view-feature-story-on-hompage .views-row {
-	margin:10px 0;
+	margin:0px 0;
 }
 
 .frontstud.responsive-layout-mobile .region-preface-first-inner .view-feature-story-on-hompage {
@@ -187,8 +187,9 @@ h1#page-title.title {
 }
 
 .front .region-preface-first-inner .view-feature-story-on-hompage .views-row-1 img {
-  height: 184px;
-  width: 220px;
+   width: 300px;
+   height: ;
+   margin-top: 10px;
 }
 
 .region-preface-first-inner .view-feature-story-on-hompage .views-row-2,.region-preface-first-inner .view-feature-story-on-hompage .views-row-3 {
@@ -307,9 +308,10 @@ h1#page-title.title {
 
 
 .front .block-menu-info-for-menu h2.block-title,.front .block.home-events h2.block-title,.front .block-snapshots-block h2.block-title,.front .block.follow-uni h2.block-title {
-	margin-bottom:0;
-	border-bottom:none;
-}
+	margin-bottom:10px;
+	border-bottom: 1px solid #D5D5D5;
+	margin-top: 15px;
+	padding-bottom: 5px;}
 
 .block-menu-info-for-menu ul {
 	display:block;
@@ -365,7 +367,7 @@ h1#page-title.title {
 
 .front .zone-content .block-uni-news-announcements-block h2.block-title {
 	margin-bottom:0;
-	padding:20px 0 15px 0;
+	padding:10px 0 0px 0;
 	width:77%;
 	border-bottom:none;
 	color:#4c4c4c;
@@ -375,13 +377,13 @@ h1#page-title.title {
 }
 
 .front .zone-content .block-uni-news-announcements-block h2.block-title a.inside-uni-button {
-    background:url(images/btn-inside-UNI.png) no-repeat scroll 0 0 transparent;
-    width: 104px;
-    height: 24px;
-    display: block;
+    background:url(images/InsideUNI-sm.png) no-repeat scroll 0 0 transparent;
+    width: 101px;
+    height: 18px;
+     display: block;
     float: left;
     text-indent: -9999px;
-    margin: -4px 5px 0 0;
+    margin: -2px 5px 0 0;
     padding: 0;
 }
 
@@ -405,7 +407,6 @@ h1#page-title.title {
 
 .front.responsive-layout-mobile .zone-content .block-uni-news-announcements-block .view-footer a {
 	padding:5px;
-	outline:1px solid #ddd;
 }
 
 .front .zone-content .block-snapshots-block h2.block-title {
@@ -592,7 +593,7 @@ h1#page-title.title {
 }
 
 .front .block.follow-uni ul {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .block.follow-uni ul li,.block.interior-follow-uni ul li {
@@ -951,10 +952,11 @@ a.menu-678, ul.links li.menu_icon.menu-678 a {
 }
 
 .block.uni-glance h2.block-title {
-  color: #eac42f;
+  color: #4b116f;
   font-size: 2.2em; margin-bottom: 12px;
   margin-top: 10px;
   padding-top: 0px;
+  font-family:'droid_sansbold', Arial,Helvetica,sans-serif; font-weight: normal;
 }
 
 .view-uni-at-a-glance img {
@@ -1440,8 +1442,7 @@ a.button {background-color: #4B116F;
 
 .responsive-layout-mobile #block-views-marketing-messages-block {
   /*float: right;*/
-  height: 137px;
-  width: 219px;
+  display:none;
 }
 
 .responsive-layout-mobile #block-views-feature-story-on-hompage-block {
@@ -1452,14 +1453,14 @@ a.button {background-color: #4B116F;
   display: none;
 }
 
-.responsive-layout-mobile #zone-preface-wrapper {
+/*.responsive-layout-mobile #zone-preface-wrapper {
   background-color: #F0F0F0;
   border-bottom: solid 1px #c0c0c0;
   border-top: solid 1px #c0c0c0;
-}
+}*/
 
 .responsive-layout-mobile #section-content {
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 .not-logged-in .mceToolbar a {
@@ -1469,3 +1470,5 @@ a.button {background-color: #4B116F;
 #block-19 a {background-color: #4B116F; background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.28)); background-image: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.28)); background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.28)); background-position: center bottom; background-repeat: repeat-x;color: white; display: block; font-size: 1.2em; padding: 5px; text-align: center;}
 
 .form-item, .form-actions {display: inline;}
+
+region-inner region-user-second-inner {margin-bottom: 10px;}
