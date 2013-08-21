@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Create a UNI Search block.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function uni_search_block_info() {
+  $blocks['uni_search'] = array(
+    'info' => t('UNI Search'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function uni_search_block_view($delta = '') {
+  $path = drupal_get_path('module', 'uni_search');
+  drupal_add_js($path . '/js/unisearch.js');
+  $block['subject'] = NULL;
+  $block['content'] = '
+ 		<form action="" name="radio_form" method="get">
+			<input type="hidden" value="011098738754097199461:oywhsfqqr2s" name="cx">
+			<input type="hidden" value="FORID:9" name="cof">
+			<label for="q">Search the UNI website</label>
+			<input id="q" type="text" size="18" name="q" onkeypress="checkEnter(event)">
+			<input type="button" value="" onclick="spages()">
+		</form>
+ 	';
+ 	return $block;
+}

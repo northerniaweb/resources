@@ -1,0 +1,17 @@
+<?php
+function video_filter_unipanopto_codec_info() {
+$codecs['unipanopto'] = array(
+  'name' => t('UNI Panopto Video'),
+  'sample_url' => 'http://panopto2.its-et.uni.edu/Panopto/Pages/Viewer/Default.aspx?id=2156bef1-e19e-4f7e-86a9-965b4f706e57',
+  'callback' => 'video_filter_unipanopto',
+  'regexp' => '/panopto2\.its-et\.uni\.edu\/Panopto\/Pages\/Viewer\/Default\.aspx\?id=([a-z0-9\-]+)/',
+  'ratio' => 4 / 3,
+);
+return $codecs;
+}
+
+function video_filter_unipanopto($video) {
+  $html = '<iframe src="http://panopto.uni.edu/Panopto/Pages/Embed/Default.aspx?id=' . $video['codec']['matches'][1] . '&v=1" width="' . $video['width'] . '" height="' . $video['height'] . '" frameborder="0"></iframe>';
+
+  return $html;
+}

@@ -1,0 +1,55 @@
+<?php
+/**
+ * @file
+ * Code for the UNI News & Announcements feature.
+ */
+
+include_once 'uni_news_announcements.features.inc';
+
+
+/**
+ * Admin configuration form
+ */
+function uni_news_announcements_settings() {
+  $form['alert'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Alert Message Setting'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );  
+  $form['alert']['uni_news_announcements_alert_message'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Alert Message'),
+    '#description' => t('Set the alert message to be displayed.'),
+    '#default_value' => variable_get('uni_news_announcements_alert_message', t('')),
+  );
+  
+  $form['alert']['uni_news_announcements_use'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use alert message'),
+    '#description' => t('Select if you wish to use the alert message and override the list.'),
+    '#default_value' => variable_get('uni_news_announcements_use', 0),
+  );
+
+  return system_settings_form($form);
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function uni_news_announcements_theme($existing, $type, $theme, $path) {
+  // This theme hook is for a display output type template.
+  // It does not register a custom preprocess function.
+  // Note the arguments array for this template type, different from above.  
+  $themes['views_view__uni_news_announcements__block'] = array(
+    'template'  => 'templates/views-view--uni-news-announcements--block',
+    'original hook' => 'views_view',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_views_view',
+    ),
+    'arguments' => array('view' => NULL),
+  );
+  
+  return $themes;
+}

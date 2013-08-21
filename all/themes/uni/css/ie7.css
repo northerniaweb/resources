@@ -1,0 +1,199 @@
+/* toolbar menu */
+#section-header .navigation li {
+  width: auto;
+}
+
+.zone-menu ul li a {
+    padding-bottom: 10px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    padding-top: 10px !important;
+}
+
+.zone-menu ul li.first {
+    margin-left: 40px !important;
+}
+
+/* header */
+.region-branding {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* UNI search */
+#block-uni-search-uni-search input[type="text"] {
+    left: 550px !important;
+    top: 30px !important;  
+    position: absolute;
+    width: 90px !important;
+}
+
+#block-uni-search-uni-search input[type="button"] {
+    left: 650px !important;
+    position: absolute;
+    top: 32px !important;
+}
+
+/* feature stories */
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-1 {
+   left: 0;
+    position: absolute;
+    top: 75px;
+    display: block;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-2 {
+   left: 320px;
+    position: absolute;
+    top: 175px;
+    display: block;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-3 {
+    position: absolute;
+    right: 0;
+    top: 75px;
+    display: block;
+}
+
+/* marketing messages */
+.front .region-preface-first-inner .view-marketing-messages .views-row-1 {
+    left: 640px;
+    position: absolute;
+    top: 340px;
+    display: block;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-2 {
+   left: 320px;
+    position: absolute;
+    top: 20px;	
+    display: block;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-3 {
+    left: 480px;
+    position: absolute;
+    top: 20px;
+    display: block;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-4 { /* this one isn't displaying */
+    left: 0px;
+    position: absolute;
+    top: 340px;
+    display: block !important;
+}
+
+.front #zone-preface-wrapper {
+  height: 520px !important;
+}
+
+/* Info for menu */
+.region-sidebar-first .block-menu ul li, .region-sidebar-second .block-menu ul li {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+/* event calendar */
+.front #block-views-featured-events-block {
+    margin-top: 40px;
+}
+
+/* snapshots */
+.front .zone-content .block-snapshots-block {
+    display: block !important;
+}
+
+.front #block-views-snapshots-block {
+    margin-top: 20px;
+}
+
+/* footer */
+.region-footer-first p.map {
+    margin-right: 20px !important;
+    float: left !important;
+}
+
+ul#visiting-left {
+    float: left;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+ul#footer-left {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 130px;
+}
+
+ul#footer-right {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    width: 290px;
+}
+
+/* slideshows */
+.not-front .region-content .block-subpage-slideshow-block-1 {
+    display: none;
+}
+
+.not-front .region-content .block-subpage-slideshow-block {
+    display: block;
+}
+
+/* background images */
+.student-life-bg-image .zone-preface {
+    background: transparent !important;
+}
+
+body.not-front  {
+  background: transparent !important;
+}
+
+/* page titles */
+h1 #page-title,
+h1.title {
+  color: #4b116f !important;
+}
+
+.inside-uni-title p.purple-logo {
+    display: block;
+}
+
+.inside-uni-title p.white-logo {
+    display: none;
+}
+
+/* Inside UNI boxes */
+#block-views-student-life-block-4 {
+  width: 580px !important;
+}
+
+#block-views-student-life-block-4 table {
+  width: 580px !important;
+}
+
+#block-views-student-life-block-4 td {
+  width: 166px !important;
+  padding: 4px 4px !important;
+}
+
+#block-views-student-life-block-4 img {
+  width: 160px !important;
+  height: 107px !important;
+}
+
+/* promotional callouts */
+.block-feature-callout-block, .block-promotional-callout-block {
+    display: block !important;
+    float: left;
+    width: 166px;
+}

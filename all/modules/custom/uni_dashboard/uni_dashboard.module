@@ -1,0 +1,47 @@
+<?php
+// $Id$
+/**
+ * @file
+ * jQuery Gratt
+ * Render a Gantt chart-like view for content dashboard.
+ *
+ */
+
+/**
+ * Implements hook_permission().
+ */ 
+function uni_dashboard_permission() {
+  return array(
+    'administer uni dashboard chart' => array(
+      'title' => t('Administer uni dashboard chart'),
+    ),
+    'view uni dashboard chart' => array(
+      'title' => t('View uni dashboard chart'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function uni_dashboard_menu() {
+  $items = array();
+  $items['admin/config/uni_dashboard'] = array(
+    'title' => 'Dashboard settings',
+    'description' => 'Displays dashboard with a Gantt chart-like view.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('uni_dashboard_admin_settings'),
+    'access arguments' => array('administer uni dashboard chart'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'uni_dashboard.admin.inc',
+  );
+  $items['uni_dashboard'] = array(
+    'title' => 'Dashboard',
+    'description' => 'Displays dashboard with a Gantt chart-like view.',
+    'page callback' => 'uni_dashboard_build_view',
+    'access arguments' => array('view uni dashboard chart'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'uni_dashboard.page.inc',
+  );
+  return $items;
+}

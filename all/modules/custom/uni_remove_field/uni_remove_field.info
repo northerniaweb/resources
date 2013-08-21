@@ -1,0 +1,9 @@
+name = UNI Remove Field
+description = Remove a field from a form
+package = UNI Modules
+core = 7.x
+php = 5.1
+project = uni_remove_field
+version = 7.x-1.0-rc1
+
+files[] = uni_remove_field.module

@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * Implementation of hook_init()
+ */
+function firebug_lite_init() {
+  if (user_access('use firebug lite')) {
+    global $base_path;
+
+    $my_path = "/".drupal_get_path('module', 'firebug_lite') ;
+    
+    
+    $settings = array(
+	'saveCookies' => (variable_get('firebug_saveCookies', 'false') == 'true' ? 'true' : 'false'),
+	'startOpened' => (variable_get('firebug_startOpened', 'false') == 'true' ? 'true' : 'false'),
+	'startInNewWindow' => (variable_get('firebug_startInNewWindow', 'false') == 'true' ? 'true' : 'false'),
+	'showIconWhenHidden' => (variable_get('firebug_showIconWhenHidden', 'true') == 'true' ? 'true' : 'false'),
+	'overrideConsole' => (variable_get('firebug_overrideConsole', 'true') == 'true' ? 'true' : 'false'),
+	'ignoreFirebugElements' => (variable_get('firebug_ignoreFirebugElements', 'true') == 'true' ? 'true' : 'false'),
+	'disableXHRListener' => (variable_get('firebug_disableXHRListener', 'false') == 'true' ? 'true' : 'false'),
+	'disableWhenFirebugActive' => (variable_get('firebug_disableWhenFirebugActive', 'true') == 'true' ? 'true' : 'false'),
+	'enableTrace' => (variable_get('firebug_enableTrace', 'false') == 'true' ? 'true' : 'false'),
+	'enablePersistent' => (variable_get('firebug_enablePersistent', 'false') == 'true' ? 'true' : 'false'),
+    );
+    
+    $options = "";
+    foreach ($settings as $setting=>$value) {
+	$options .= ($options == "" ? "" : ",") . $setting."=".$value;
+    }
+    drupal_add_js($my_path . '/build/firebug-lite.js#'.$options, array('type'=>'external', 'scope'=>'footer'));
+
+//    drupal_add_js($settings, array('type'=>'inline', 'scope'=>'footer'));
+  }
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function firebug_lite_permission() {
+
+ return array(
+    'use firebug lite' => array(
+        'title' => t('Use Firebug Lite'), 
+    	'description' => t('Use Firebug Lite'),
+    )
+  );
+}

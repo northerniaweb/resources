@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Getting Started feature.
+ */
+
+include_once 'uni_getting_started.features.inc';

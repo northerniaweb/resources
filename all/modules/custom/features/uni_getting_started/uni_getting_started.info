@@ -1,0 +1,14 @@
+name = UNI Getting Started
+description = Used for Getting Started menu section with hover images.
+core = 7.x
+package = UNI
+php = 5.2.4
+dependencies[] = features
+dependencies[] = image
+dependencies[] = menu
+dependencies[] = menu_icons
+dependencies[] = strongarm
+dependencies[] = uni_contexts_and_basic_pages
+features[features_api][] = api:1
+features[image][] = getting_started
+features[menu_custom][] = menu-getting-started

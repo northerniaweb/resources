@@ -1,0 +1,5 @@
+<?php
+function news_body_formatter_form_news_node_form_alter(&$form, &$form_state) {
+  $form['body']['und'][0]['#format'] = "wysiwyg_format";
+}
+?>
