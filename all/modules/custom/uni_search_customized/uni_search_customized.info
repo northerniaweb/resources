@@ -1,0 +1,11 @@
+name = UNI Search - Custom
+description = Build a global UNI Search block.
+package = UNI Modules
+core = 7.x
+php = 5.1
+project = uni_search
+version = 7.x-1.0-rc1
+
+files[] = uni_search_customized.module
+files[] = js/unisearch.js
+dependencies[] = block

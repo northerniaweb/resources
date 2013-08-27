@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Events Parser feature.
+ */
+
+include_once('uni_events_parser.features.inc');

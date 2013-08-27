@@ -1,0 +1,8 @@
+name = UNI Streaming Video Filter
+description = Filter to include videos from UNI's Helix media server
+core = 7.x
+dependencies[] = "video_filter"
+package = Input filters
+project = "video_filter_unihelix"
+project status url = http://www.uni.edu/features/fserver
+version = "7.x-1.0-beta1"

@@ -1,0 +1,12 @@
+name = UNI Search
+description = Build a global UNI Search block.
+package = UNI Modules
+core = 7.x
+php = 5.1
+project = uni_search
+project status url = http://www.uni.edu/features/fserver
+version = 7.x-1.0-rc1
+
+files[] = uni_search.module
+files[] = js/unisearch.js
+dependencies[] = block

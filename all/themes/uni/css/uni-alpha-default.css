@@ -1,0 +1,52 @@
+/* snapshots */
+.front .zone-content .block-snapshots-block {
+    display: block !important;
+}
+
+.front #block-views-snapshots-block {
+    margin-top: 20px;
+}
+
+/* mobile menus */
+#block-menu-block-3,
+#block-menu-block-4,
+#block-block-15,
+#block-block-16 {
+  display: none;
+}
+
+.responsive-layout-mobile div.navigation,
+.responsive-layout-mobile #block-menu-menu-secondary-menu {
+  display: block;
+}
+
+.responsive-layout-mobile #zone-preface-wrapper {
+  border: none;
+  background: transparent;
+}
+
+.responsive-layout-mobile .uni-glance td.col-3,
+.responsive-layout-mobile .uni-glance td.col-4,
+.responsive-layout-mobile .uni-glance td.col-5 {
+  display: inline;
+}
+
+.front #region-content {
+    float: right;
+}
+
+/* UNI Search block */
+#block-uni-search-uni-search input[type="button"] {
+padding-bottom: 3px;
+}
+
+#region-user-second {
+  width: 300px;
+  padding-left: 200px;
+}
+
+#block-uni-search-uni-search {
+  margin-top: 0px;
+  width: 130px;
+  float: left;
+}

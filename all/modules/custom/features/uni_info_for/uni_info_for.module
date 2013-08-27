@@ -1,0 +1,85 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Info For feature.
+ */
+
+include_once 'uni_info_for.features.inc';
+
+/**
+ * Implementation of theme_menu_tree
+ * Perform alterations to the theme information on UNI Info For menu.
+ */
+function uni_menu_tree__menu_info_for_menu($variables) {
+  drupal_add_js(drupal_get_path('module', 'uni_info_for') .'/js/uni.js', 'file');
+  $output = '<ul class="menu uni_for_menu">' . $variables['tree'] . '</ul>';
+  
+  $menu = menu_tree_all_data('menu-info-for-menu');
+  
+  if (!empty($menu)) {
+    $images = array();
+	
+    // create picture for each image
+    $x = 0;
+    foreach ($menu as $key => $items) {
+      foreach ($items as $mid => $item) {
+        if (isset($item['localized_options']['menu_icon']) && isset($item['localized_options']['menu_icon']['enable']) && isset($item['localized_options']['menu_icon']['path'])) {
+          if ($item['localized_options']['menu_icon']['enable'] == 1 && !empty($item['localized_options']['menu_icon']['path'])) {
+            $x++;
+		    		    
+            // Copied from menu_icon module
+            $image_path = $item['localized_options']['menu_icon']['path'];
+            $image_style = (isset($item['localized_options']['menu_icon']['image_style']) && !empty($item['localized_options']['menu_icon']['image_style'])) ? $item['localized_options']['menu_icon']['image_style'] : NULL;
+            $alt_text = (isset($item['localized_options']['menu_icon']['alt_text'])) ? $item['localized_options']['menu_icon']['alt_text'] : NULL;
+
+            if ($image_style) {
+              $source_uri = $image_path;
+              $image_path = image_style_path($image_style, $source_uri);
+
+              if (!file_exists($image_path)) {
+                image_style_create_derivative(image_style_load($image_style), $source_uri, $image_path);
+              }
+            }
+		  
+            $class = 'img-menu-'. $item['mlid'];
+            $style = ($x == 1 ? '' : 'display: none;');
+
+            // Retrieve the image dimensions
+            $image_url = image_style_url($image_style, $image_path);
+            $images[] = '<img src="'.$image_url.'" alt="'.$alt_text.'" class="'.$class.'" style="'.$style.'">';
+          }
+        }
+      }
+    }
+    if (!empty($images)) {
+      $output .= '<div id="info-for-img">'.implode('', $images).'</div>';
+    }
+  }
+  return $output;
+}
+
+/**
+ * Implementation of theme_menu_link
+ * Perform alterations to the theme information on UNI Info For menu.
+ */
+function uni_menu_link__menu_info_for_menu($variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  if (isset($element['#localized_options']['attributes']['class'])) {
+    $class = $element['#localized_options']['attributes']['class'];
+    $classes = array();
+    unset($element['#localized_options']['attributes']['class']);
+    foreach ($class as $key => $val) {
+      $element['#localized_options']['attributes']['class'][] = 'img-' . $val;
+      if ($key != 'menu_icon') {
+        $element['#localized_options']['attributes']['id'][] = 'img-' . $val;
+      }
+    }
+  }
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}

@@ -1,0 +1,14 @@
+name = 'UNI Alert'
+description = ''
+core = '7.x'
+engine = 'phptemplate'
+version = '1.x'
+
+regions[page_top] = 'Page Top'
+regions[header_first] = 'Header First'
+regions[content] = 'Content'
+regions[sidebar_first] = 'Sidebar First'
+regions[sidebar_second] = 'Sidebar Second'
+regions[footer_first] = 'Footer First'
+
+stylesheets[all][] = css/style.css

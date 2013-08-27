@@ -1,0 +1,921 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+
+.front #region-content {float: right;}
+
+body.student-life-bg-image {
+  background: url(images/BG-SL-LSidebar-narrow.jpg) no-repeat scroll top center transparent;
+}
+
+body.front {
+  background: url(images/BG-page-home-narrow.jpg) no-repeat scroll center 90px transparent;
+}
+
+h2.block-title {
+  font-size: 1.8em;
+}
+
+h1#page-title.title {
+  font-size: 2em;
+  line-height: 1em;
+  padding: 25px 0 25px 25px; 
+}
+
+/* header */
+.section-header {
+  background: url(images/BG-header.png) repeat-x scroll 0 0 transparent;
+  height: 141px;
+}
+
+.zone-menu {
+  background: url(images/bg-main-menu-narrow2.png) no-repeat scroll 0 0 transparent;
+  height: 40px;
+  font-family:  'droid_sansbold';
+  font-size: 1em;
+}
+
+.zone-menu ul {
+  width: auto;
+}
+
+.zone-menu ul li {
+  display: block;
+  float: left;
+  padding: 0;
+  width: auto;
+  margin: 0;
+  list-style: none;
+}
+
+.zone-menu ul li.first {
+  margin-left: 40px;
+}
+
+.zone-menu ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.zone-menu ul li:hover {
+  background: transparent;
+}
+
+.region-user-second {
+  padding-top: 20px;
+}
+
+.region-branding .logo-img {
+  padding-top: 5px;
+}
+
+.region-branding {
+  background: transparent;
+}
+
+
+.region-branding .logo-img img {
+  width: auto;
+  padding: 0;
+}
+
+.block-menu-secondary-menu {
+  padding-bottom: 0;
+}
+
+.block-menu-secondary-menu ul li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin: 0 ;
+  padding: 0;
+  width: 50%;
+}
+
+.block-menu-secondary-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Styling for original search block. Can be deleted. */
+/*.block-search input.form-text {
+  width: 117px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.block-search input.form-submit {
+  background: url(images/btn-search-submit.png) no-repeat scroll 0 0 transparent;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  font-size: 0;
+  height: 17px;
+  line-height: 0;
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 77px;
+  width: 17px;
+}
+
+.block-search h2.block-title {
+  color: #ffffff;
+  float: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-right: 0;  
+  padding-top: 0;
+  text-transform: capitalize;
+
+}
+*/
+
+ 
+ /* Preface-First */
+.not-front .zone-preface {
+  background: transparent;
+  margin-bottom: 0;
+} 
+ 
+.front .region-preface-first-inner {
+  position: relative;
+  display: block;
+  height: 485px;
+  width: 100%
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row {
+  margin: 0;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-1 img,
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-2 img,
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-3 img {
+  height: 184px;
+  width: 220px;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-field-title {
+  background: #301145;
+  display: block;
+  width: 220px;
+  height: 23px;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-1 {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-2 {
+  display: block;
+  position: absolute;
+  left: 240px;
+  top: 160px;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-3 {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-1 {
+  background: transparent;
+  position: absolute;
+  top: 290px;
+  right: 60px;
+  margin:0;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-1 a {
+  background: transparent;
+  display: inline;
+  height: auto;
+  width: auto;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-1 img {
+  display: block;
+  width: 160px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-2 {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 240px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-2 img {
+  width: 100px;
+}
+
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-3 {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 360px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-3 img {
+  width: 100px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-4 {
+  background: transparent;
+  position: absolute;
+  height: auto;
+  margin: 0;
+  top: 290px;
+  left: 120px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-4 a {
+  background: transparent;
+  display: inline;
+  height: auto;
+  padding: 0;
+  width: auto;
+  
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-4 img {
+  display: block;
+  width: 100px;
+}
+
+/* Sidebar First */
+.block-menu-info-for-menu ul {
+  display: block;
+  float: left;
+  width: 160px;
+  padding-right: 10px;
+}
+
+.block-menu-info-for-menu #info-for-img {
+  display: block;
+}
+
+.block-menu-info-for-menu #info-for-img img {
+  width: 110px;
+}
+
+h2.block-title {
+  border-bottom: 1px solid #d5d5d5;    
+  color: #4c4c4c;
+  font-family:'droid_sansbold'; font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding: 20px 0 10px 0;
+  text-transform: uppercase;
+}
+
+.block-block.getting-started {
+    background: none;
+}
+
+.getting-started br {
+  display: inline;
+}
+.block-menu.getting-started ul li {
+  margin: 0 0 8px 0;
+  float: left;
+  width: 220px;
+  height: 40px;
+}
+
+.block-menu.getting-started h2.block-title {
+  border-bottom: 1px solid #d5d5d5;    
+  color: #4c4c4c;
+  font-family: 'droid_sansregular';
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  text-transform: uppercase;
+  width: 95%;
+}
+
+
+
+.block-menu-info-for-menu ul {
+  display: block;
+  float: left;
+  width: 200px;
+  padding-right: 20px;
+}
+
+.block-feature-callout-block,
+.block-promotional-callout-block {
+  display:block;
+  width: 166px; float: left;
+}
+
+.region-sidebar-first .block-menu ul.menu ul.menu li,
+.region-sidebar-second .block-menu ul.menu ul.menu li {
+  width: auto;
+  float: none;
+  margin: inherit;
+  padding: inherit;
+}
+
+.region-sidebar-first .block-menu ul.menu ul.menu li a,
+.region-sidebar-second .block-menu ul.menu ul.menu li a {
+  padding-left: inherit;
+
+}
+
+.region-sidebar-first .block-menu ul.menu ul.menu ul.menu li a,
+.region-sidebar-second .block-menu ul.menu ul.menu ul.menu li a {
+  padding-left: inherit;
+}
+
+.region-sidebar-first .block-menu ul.menu li ul.menu li ul.menu li,
+.region-sidebar-second .block-menu ul.menu li ul.menu li ul.menu li {
+  width: auto;
+}
+
+
+/*Content*/
+
+.zone-content {
+  background: #ffffff;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  margin-top: 0;
+  padding: 5px 0;
+}
+
+
+.front .zone-content {
+  background: url(images/BG-front-view-shadow.png)no-repeat scroll 290px -90px #ffffff;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  padding-bottom: 0;
+}
+
+.front .zone-content .block-uni-news-announcements-block h2.block-title {
+  color: #4c4c4c;
+  font-family: 'droid_sansregular';
+  font-size: 1.4em;
+  margin-bottom: 0;
+  padding: 25px 0 15px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.front .zone-content .block-uni-news-announcements-block h2.block-title a.inside-uni-button {
+    background:url(images/InsideUNI-sm.png) no-repeat scroll 0 0 transparent;
+    width: 101px;
+    height: 18px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    margin: -2px 5px 0 0;
+    padding: 0;
+}
+
+.front .zone-content .block-uni-news-announcements-block .views-field-field-news-image {
+  border: 2px solid #dcdcdc;
+  display: block;
+  float: left;
+  margin: 0 5px 10px 0;
+}
+
+  /*snapshots frontpage block*/
+  /*snapshots frontpage block*/
+.front .zone-content .block-snapshots-block {
+  display: block;
+}
+
+.front .zone-content .block-snapshots-block-1 {
+  display: none; /*hides mobile block*/
+}
+  
+.front .zone-content .block-snapshots-block .jcarousel-skin-default .jcarousel-prev-horizontal {
+  background: url(images/bg-snapshot-arrows.png) no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 28px;
+  left: 5px;
+  top: 32px;
+  width: 20px;
+}
+
+.front .zone-content .block-snapshots-block .jcarousel-skin-default .jcarousel-next-horizontal {
+  background: url(images/bg-snapshot-arrows.png) no-repeat scroll -52px 0 transparent;
+  display: block;
+  height: 28px;
+  right: 5px;
+  top: 32px;
+  width: 20px;
+}
+
+.front .zone-content .block-snapshots-block .jcarousel-skin-default .jcarousel-container-horizontal {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.front .zone-content .block-snapshots-block .jcarousel-skin-default ul {
+  width: 245px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.front .zone-content .block-snapshots-block .jcarousel-skin-default .jcarousel-clip-horizontal {
+  background: #f0f0f0;
+  height: 85px;
+  padding-top: 10px;
+  width: auto;
+}
+
+.front .zone-content .block-snapshots-block .jcarousel-skin-default .jcarousel-item-horizontal {
+  display: block;
+  border: 2px solid #eec588;
+  height: 71px !important;
+  margin: 0 3px;
+  padding: 0;
+  width: 71px !important;
+}
+
+.not-front.zone-content {
+  background:  #ffffff;
+}
+
+.not-front.large-sidebar-right.context-resources .zone-content {
+  background:url(images/BG-sidebar-right-shadow.png) no-repeat scroll 420px top #ffffff;
+}
+
+.not-front.sidebar-second.context-resources .zone-content {
+   background:url(images/BG-sidebar-right-shadow.png) no-repeat scroll 540px top #ffffff;
+}
+
+.not-front .region-content .block-subpage-slideshow-block-1  {
+  display: none;
+}
+
+.not-front .region-content .block-subpage-slideshow-block {
+  display: block;
+}
+
+.block-views-student-life-block {
+  border-top: 1px solid #d5d5d5;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  
+}
+
+.block-views-subpage-slideshow-block .views-field-field-body-subpage-slideshow {
+	background:url(images/BG-black-transparency.png) repeat scroll 0 0 transparent;
+	color:#fff;
+	display:block;
+	width:220px;
+	height:80px;
+	position:absolute;
+	top:160px;
+	left:0;
+}
+
+.block-views-subpage-slideshow-block .view-subpage-slideshow .views-slideshow-controls-bottom  {
+	background:url(images/BG-black-transparency.png) repeat scroll 0 0 transparent;
+	position:absolute;
+	left: 395px;
+	width:120px;
+	height:35px;
+  top: 240px;
+	z-index:50;
+	padding-right:5px;
+  border-top-left-radius: 28px;
+	-webkit-border-top-left-radius: 28px;
+}
+
+
+.block-featured-news-block .view-header {
+  float: left;
+  width: 100%;
+}
+
+.insideuni-links p {
+  display: block;
+  float: left;
+  padding-right: 5px;
+}
+
+.insideuni-links ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px solid #dddddd;
+}
+
+.dateinside {
+  color: #4c4c4c;
+  float: left;
+  font-family: 'droid_sansregular';
+  font-size: 1.4em;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.insideuni-links {
+  float: right;
+  padding-top: 5px;
+  width: 50%;
+}
+
+.insideuni-links ul {
+  display: block;
+  padding: 0;
+}
+
+.insideuni-links ul li.last {
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+ul.insideuni-contact {
+  border-right: 2px dotted #aaaaaa;
+}
+
+ul.insideuni-contact,
+ul.insideuni-contact-2,
+ul.insideuni-contact-3 {
+  float: left;
+    padding-right: 5px;
+  margin-right: 5px;
+}
+
+ul.insideuni-contact li,
+ul.insideuni-contact-2 li,
+ul.insideuni-contact-3 li {
+  font-size: .9em;
+  list-style: none;
+
+}
+
+ul.insideuni-contact-3 {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+ul.insideuni-contact-3 li.search a {
+  border: 1px solid #eeeeee;
+  padding: 4px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+ul.insideuni-contact li a,
+ul.insideuni-contact-2 li a,
+ul.insideuni-contact-3 li a {
+}
+
+.insideuni-bigblock img {
+  width: 100%;
+	border: thin solid #000;
+}
+
+#block-views-5f0fbbe02645391cb29c895149038323 img {
+  width: 100%;
+}
+
+.block-views-student-life-block .views-row,
+.block-views-student-life-block-2 .views-row  {
+  float: left;
+  margin: 0 10px 15px 10px;
+  width: 160px;
+  /*height: 385px;*/
+  overflow: hidden;
+}
+
+.block-views-student-life-block-1 .views-row {
+  height: 385px;
+  float: left;
+  margin: 0 10px 15px 10px;
+  width: 120px;
+  overflow: hidden;
+}
+
+.block-views-student-life-block .views-row-1,
+.block-views-student-life-block .views-row-4,
+.block-views-student-life-block .views-row-7,
+.block-views-student-life-block .views-row-10,
+.block-views-student-life-block-1 .views-row-1,
+.block-views-student-life-block-1 .views-row-4,
+.block-views-student-life-block-1 .views-row-7,
+.block-views-student-life-block-1 .views-row-10,
+.block-views-student-life-block-2 .views-row-1,
+.block-views-student-life-block-2 .views-row-4,
+.block-views-student-life-block-2 .views-row-7,
+.block-views-student-life-block-2 .views-row-10  {
+  margin-left: 0;
+}
+
+.block-views-student-life-block .views-row-3,
+.block-views-student-life-block .views-row-6,
+.block-views-student-life-block .views-row-9,
+.block-views-student-life-block .views-row-12,
+.block-views-student-life-block-1 .views-row-3,
+.block-views-student-life-block-1 .views-row-6,
+.block-views-student-life-block-1 .views-row-9 ,
+.block-views-student-life-block-1 .views-row-12,
+.block-views-student-life-block-2 .views-row-3,
+.block-views-student-life-block-2 .views-row-6,
+.block-views-student-life-block-2 .views-row-9,
+.block-views-student-life-block-2 .views-row-12{
+  margin-right: 0;
+}
+
+.block-views-student-life-block .views-field-field-student-life-image img,
+.block-views-student-life-block-1 .views-field-field-student-life-image img,
+.block-views-student-life-block-2 .views-field-field-student-life-image img {
+  border: 3px solid #e1e1d9;
+}
+
+.block-student-life-block-4 td {
+  width: 33%;
+}
+
+.block-student-life-block-4 img {
+  height: 81px;
+  width: 122px;
+}
+
+/*Footer*/
+.zone-footer-wrapper {
+  background: url(images/BG-footer.png) repeat-x scroll 0 0 #330650;
+  padding-bottom: 10px;
+}
+
+.region-footer-first .block.footer-menu {
+    background: url(images/BG-footer-divider.png) no-repeat scroll left center transparent;
+
+}
+
+.region-footer-first .block.footer-menu ul{
+  float: left;
+  margin-left: 20px;
+  margin-right: auto;
+ margin-top: 20px;
+ 
+  margin-bottom: 10px;
+}
+
+.region-footer-first .block.footer-menu ul li {
+  width: auto;
+}
+
+.region-footer-first .block.footer-menu ul li.footer-narrow {
+  width: 155px;
+}
+
+.view-uni-at-a-glance img {
+  width: 124px;
+}
+
+.front.responsive-layout-narrow .block.home-events,
+.front.responsive-layout-narrow .block.block-snapshots-block  {
+  width: 100% !important;
+}
+
+.page-node-1338 .block.purple-callout,
+.page-node-1340 .block.purple-callout {
+  float: left;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 120px ;
+}
+
+.page-node-1338 .block.purple-callout img,
+.page-node-1340 .block.purple-callout img {
+  width: 100%;
+}
+
+.page-node-1338 .block-kudos-archive-block-1,
+.page-node-1340 .block-kudos-archive-block-1 {
+  width: 224px;
+  margin-left: 10px;
+  margin-right: 0;
+  float: left;
+}
+
+.page-node-1338 .block-kudos-archive-block-1 h2.block-title,
+.page-node-1340 .block-kudos-archive-block-1 h2.block-title {
+  margin-top: -20px;
+  
+}
+
+.block-menu.getting-started {
+  margin-bottom: 0;
+}
+
+.page-node-1340 h1#page-title.title,
+.page-node-1338 h1#page-title.title {
+  border-bottom: none;
+  margin-bottom: none;
+  font-size: 2em;
+  font-family:'droid_sansbold'; font-weight: normal;
+   padding: 31px 0 0 10px;
+}
+
+
+/* CHANGES BY UNI BELOW THIS LINE  */
+
+/* SET MOST FONTS TO DROID SANS REGULAR */
+
+#block-views-uni-at-a-glance-block-1 {
+  background: url("images/uni_at_a_glance_bg_narrow.png") no-repeat scroll 0px 42px;
+}
+
+/* changed .zone-content .block-uni-news-announcements-block h2.block-title width to 100% (from 71%) */
+
+.region-footer-first p.map {
+	float:left; /* moved from global.css, line 757 */
+}
+
+.region-footer-first .block.footer-menu ul li {
+  width: 100%;
+}
+
+.region-footer-first p.map {
+  margin-right: 20px;
+}
+
+ul#visiting-left {
+  margin-bottom: 0px;
+  width: 127px;
+}
+
+ul#visiting-right {
+  width: 127px;
+}
+
+ul#footer-left {
+  width: 100%;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  float: left;
+}
+
+ul#footer-right {
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
+  float: left;
+  width: 100%px;
+}
+
+/* added class to body tag on first line */
+
+/* page titles */
+.student-life-bg-image h1#page-title.title {
+  color: #FFFFFF;
+}
+
+h1#page-title.title {
+  color: #4B116F;
+}
+
+/* page titles for Inside UNI section */
+.page-node-1338 .block-delta-blocks-page-title,
+.page-node-1340 .block-delta-blocks-page-title {
+  width: 510px !important;
+}
+
+/*set height for News & Announcements block on homepage */
+#block-views-uni-news-announcements-block {
+  height: 360px;
+}
+
+/* commented out height for boxes, line 592 */
+
+/* Boxes in grid */
+#block-views-student-life-block-3 .views-field-field-student-life-image img {
+  border: 3px solid #e1e1d9;
+}
+
+/* In Their Words view */
+.view-in-their-words-videos td {
+  width: 50%;
+}
+
+/* Snapshots */
+.front .zone-content .jcarousel-view--snapshots--block .jcarousel-item-1 img, 
+.front .zone-content .jcarousel-view--snapshots--block .jcarousel-item-2 img, 
+.front .zone-content .jcarousel-view--snapshots--block .jcarousel-item-3 img, 
+.front .zone-content .jcarousel-view--snapshots--block .jcarousel-item-4 img, 
+.front .zone-content .jcarousel-view--snapshots--block .jcarousel-item-5 img, 
+.front .zone-content .jcarousel-view--snapshots--block .jcarousel-item-6 img {
+    border: solid 2px #ECDB97;
+    height: 75px;
+    width: 75px;
+}
+
+.front .views-field-field-marketing-image img,
+.front .views-field-field-homepage-image img {
+  margin-top: 0px;
+}
+
+.block.uni-glance h2.block-title {
+  margin-top: -10px;
+}
+
+#block-views-subpage-slideshow-block,
+.views-field-field-slideshow-images img {
+  width: 520px;
+  height: 297px;
+}
+
+#block-views-student-life-block-3 .views-field-field-student-life-image img,
+.views-field-field-student-life-image img {
+  width: 152px;
+  height: 98px;
+}
+
+.page-node-1338 #block-views-student-life-block-4 .views-field-field-student-life-image img,
+.page-node-1340 #block-views-student-life-block-4 .views-field-field-student-life-image img {
+  width: 116px;
+  height: 75px;
+}
+
+.views-field-field-feature-callout-image img,
+.views-field-field-promotional-callout-image img {
+  width: 160px;
+  height: auto;
+}
+
+/* mobile menus */
+#block-menu-block-3,
+#block-menu-block-4,
+#block-block-15,
+#block-block-16 {
+  display: none;
+}
+
+#region-footer-second {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.responsive-layout-narrow #block-block-4 {
+  width: auto;
+}
+
+.responsive-layout-narrow #block-views-announcements-block,
+.responsive-layout-narrow #block-views-featured-events-block-1,
+.responsive-layout-narrow #block-views-featured-events-block-2 {
+  width: 390px;
+}
+
+.block-views-student-life-block .views-field-field-student-life-image img,
+.block-views-student-life-block-1 .views-field-field-student-life-image img,
+.block-views-student-life-block-2 .views-field-field-student-life-image img,
+.block-student-life-block-4 .views-field-field-student-life-image img {
+  border: 3px solid #e1e1d9;
+}
+
+.responsive-layout-narrow #block-views-kudos-archive-block-2 {
+  width: auto;
+}
+
+/*.block.upcoming-events {
+	float: left;
+	width:215px;
+}*/
+
+.inside-uni-title p.purple-logo {
+  margin-top: 25px;
+}
+
+.inside-uni-title p.purple-logo img {
+  width: 150px;
+  height: auto;
+}

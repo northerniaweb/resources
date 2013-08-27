@@ -1,0 +1,32 @@
+<?php
+/**
+ * Implements hook_node_load().
+ *
+ * Prevents the following fields from being rendered to anonymous users:
+ *
+ * - field_file
+ * - field_video
+ * - field_link
+ *
+ * Sets a message that is shown to the user if a field has been hidden.
+ *
+ */
+function mymodule_node_load($nodes, $types) {
+  global $user;
+  $hidden = FALSE;
+  // user is anonymous
+  if ($user->uid == 0) {
+    // apply to single node view only
+    // remove this condition to apply to views with multiple resources
+    if (count($nodes) == 1) {
+      foreach ($nodes as $node) {
+        if ($node->type == 'announcements') {
+          if (count($node->field_inside_uni_home)) {
+            unset($node->field_inside_uni_home);
+            $hidden = TRUE;
+          }
+        }
+      }
+    }
+  }       
+}

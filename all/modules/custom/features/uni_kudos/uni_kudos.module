@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Kudos feature.
+ */
+
+include_once 'uni_kudos.features.inc';

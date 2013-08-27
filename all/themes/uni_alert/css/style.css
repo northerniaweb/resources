@@ -1,0 +1,73 @@
+#header, #footer {
+  background-color: #4B116F;
+  padding: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#sidebar-first {
+  display: inline;
+  float: left;
+  margin: 10px;
+  width: 205px;
+}
+
+#content {
+  display: inline;
+  float: left;
+  margin: 10px;
+  width: 75%
+}
+
+#uni-hotlines h2.block-title {
+  background-color: #4B116F;
+  color: #FFFFFF;
+  padding-top: 5px;
+  text-align: center;
+}
+
+#uni-hotlines p {
+  text-align: center;
+}
+
+.front h1.title {
+  display: none;
+}
+
+h2 {
+  margin: 10px 0px;
+}
+
+h3 {
+  margin: 5px 0px;
+}
+
+p {
+  margin: 0px 0px 10px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #4B116F;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#footer a, #footer p {
+  color: #FFFFFF;
+  font-size: 0.85em;
+}
+
+.views-field-created {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.views-row {
+  margin-bottom: 20px;
+}

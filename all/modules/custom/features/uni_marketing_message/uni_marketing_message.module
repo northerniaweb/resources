@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Marketing Message feature.
+ */
+
+include_once 'uni_marketing_message.features.inc';
