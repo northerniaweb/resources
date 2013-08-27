@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Subpage Slideshow feature.
+ */
+
+include_once 'uni_subpage_slideshow.features.inc';

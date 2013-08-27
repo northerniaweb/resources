@@ -1,0 +1,72 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Snapshots feature.
+ */
+
+include_once 'uni_snapshots.features.inc';
+
+/**
+ * Implementation of hook_theme().
+ */
+function uni_snapshots_theme($existing, $type, $theme, $path) {
+ 
+  // This theme hook is for a display output type template.
+  // It does not register a custom preprocess function.
+  // Note the arguments array for this template type, different from above.  
+  $themes['views_view__page_1'] = array(
+    'template'  => 'templates/views-view--page-1',
+    'original hook' => 'views_view',
+    'preprocess functions' => array(
+      'template_preprocess',
+      'template_preprocess_views_view',
+    ),
+    'arguments' => array('view' => NULL),
+  );
+  
+  $themes['html__gallery'] = array(
+    'template'  => 'templates/html--gallery',
+    'original hook' => 'html',
+    'preprocess functions' => array(
+      'template_preprocess',
+    ),
+    'arguments' => array('view' => NULL),
+  );
+  
+  $themes['page__gallery'] = array(
+    'template'  => 'templates/page--gallery',
+    'original hook' => 'page',
+    'preprocess functions' => array(
+      'template_preprocess',
+    ),
+    'arguments' => array('view' => NULL),
+  );
+  
+  return $themes;
+}
+
+/**
+ * Implementation of hook_theme() preprocess function.
+ */
+function uni_snapshots_views_view_field__block__field_snapshot_images(&$vars) {
+
+  // See your view's UI Theme:information page for field names.
+  // Or use dpm() (need devel module) or var_dump() 
+  // to see what's available in the $vars array.
+  
+}
+
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function uni_snapshots_jcarousel_skin_info() {
+  $skins = array();
+
+  $skins['uni-glance'] = array(
+    'title' => t('UNI'),
+    'file' => 'skins/uni/jcarousel-uni-glance.css',
+  );
+
+  return $skins;
+}

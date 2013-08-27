@@ -1,0 +1,613 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+body.student-life-bg-image {
+  background: url(images/BG-SL-LSidebar.jpg) no-repeat scroll top center transparent;
+}
+
+body.current-students-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.academics-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.get-to-know-uni-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.high-school-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.parents-families-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.faculty-staff-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.alumni-friends-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.inside-uni-bg-image {
+  background: url(images/BG-campanile.jpg) no-repeat scroll top center transparent;
+}
+
+body.front {
+  background: url(images/BG-page-home.jpg) no-repeat scroll top center transparent;
+}
+
+h1#page-title.title {
+  font-size: 2em;
+  line-height: 1em;
+  padding: 10px 0 10px 0px; 
+  font-family:'droid_sansbold', Arial,Helvetica,sans-serif; font-weight: normal;
+}
+
+/* header */
+.section-header {
+  background: url(images/BG-header.png) repeat-x scroll 0 0 transparent;
+  height: 141px;
+}
+
+.zone-menu {
+  background: url(images/BG-main-menu.png) no-repeat scroll 8px 0 transparent;
+  height: 40px;
+  font-family:  'droid_sansbold', Arial,Helvetica,sans-serif;
+  font-size: 1.1em;
+}
+
+.zone-menu ul li {
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0 20px;
+  list-style: none;
+}
+
+.zone-menu ul li.last {
+  margin-right: 0;
+}
+
+.zone-menu ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.zone-menu ul a {
+  color: #ffffff;
+  display: block;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.region-user-second {
+  padding-top: 10px;
+}
+
+.logo-img {
+  padding-top: 5px;
+}
+
+.block-menu-secondary-menu ul li {
+  list-style: none;
+  display: block;
+  float: left;
+  font-size: .9em;
+  margin: 0 ;
+  padding: 0;
+  width: 50%;
+}
+
+.block-menu-secondary-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ /* Preface-First */
+.front .region-preface-first-inner {
+  position: relative;
+  display: block;
+  height: 485px;
+  width: 100%
+  
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-field-title {
+  background: #301145;
+  display: block;
+  width: 300px;
+  height: 23px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-field-title a {
+  color: #ffffff;
+  display: block;
+  padding: 3px 0 0 5px;
+  text-decoration: none;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-1 img,
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-2 img,
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-3 img {
+  height: 251px;
+  width: 300px;
+  border: thin solid #000;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-1 {
+  position: absolute;
+  left: 0;
+  top: 75px;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-2 {
+  position: absolute;
+  left: 320px;
+  top: 175px;
+}
+
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-3 {
+  position: absolute;
+  right: 0;
+  top: 75px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-1 {
+  position: absolute;
+  top: 340px;
+  left: 640px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-1 img {
+  width: auto;
+}
+
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-2 {
+  position: absolute;
+  top: 20px;
+  left: 320px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-2 img {
+  width: auto;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-3 {
+  position: absolute;
+  top: 20px;
+  left: 480px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-3 img {
+  width: auto;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-4 {
+  position: absolute;
+  top: 340px;
+  left: 160px;
+}
+
+.front .region-preface-first-inner .view-marketing-messages .views-row-4 img {
+  width: auto;
+}
+
+/*Content*/
+
+.block-views-student-life-block .views-row,
+.block-views-student-life-block-2 .views-row {
+  float: left;
+  margin: 0 10px 15px 10px;
+  width: 220px;
+  overflow: visible;
+}
+
+.block-views-student-life-block-1 .views-row {
+  float: left;
+  margin: 0 10px 15px 10px;
+  width: 166px;
+}
+
+.block-views-student-life-block .views-row-1,
+.block-views-student-life-block .views-row-4,
+.block-views-student-life-block .views-row-7,
+.block-views-student-life-block .views-row-10,
+.block-views-student-life-block-1 .views-row-1,
+.block-views-student-life-block-1 .views-row-4,
+.block-views-student-life-block-1 .views-row-7,
+.block-views-student-life-block-1 .views-row-10,
+.block-views-student-life-block-2 .views-row-1,
+.block-views-student-life-block-2 .views-row-4,
+.block-views-student-life-block-2 .views-row-7,
+.block-views-student-life-block-2 .views-row-10,
+.block-views-student-life-block-4 .views-row-1,
+.block-views-student-life-block-4 .views-row-4,
+.block-views-student-life-block-4 .views-row-7,
+.block-views-student-life-block-4 .views-row-10 {
+  margin-left: 0;
+}
+
+.block-views-student-life-block .views-row-3,
+.block-views-student-life-block .views-row-6,
+.block-views-student-life-block .views-row-9,
+.block-views-student-life-block .views-row-12,
+.block-views-student-life-block-1 .views-row-3,
+.block-views-student-life-block-1 .views-row-6,
+.block-views-student-life-block-1 .views-row-9,
+.block-views-student-life-block-1 .views-row-12,
+.block-views-student-life-block-2 .views-row-3,
+.block-views-student-life-block-2 .views-row-6,
+.block-views-student-life-block-2 .views-row-9,
+.block-views-student-life-block-2 .views-row-12,
+.block-views-student-life-block-4 .views-row-3,
+.block-views-student-life-block-4 .views-row-6,
+.block-views-student-life-block-4 .views-row-9,
+.block-views-student-life-block-4 .views-row-12  {
+  margin-right: 0;
+}
+
+.block-views-student-life-block .views-field-field-student-life-image img,
+.block-views-student-life-block-1 .views-field-field-student-life-image img,
+.block-views-student-life-block-2 .views-field-field-student-life-image img,
+.block-student-life-block-4 .views-field-field-student-life-image img {
+  border: 3px solid #e1e1d9;
+  height: 107px;
+  width: 160px;
+}
+
+.not-front.large-sidebar-right.context-resources .zone-content {
+    background: url(images/BG-sidebar-right-shadow.png) no-repeat scroll 560px top #ffffff;
+}
+
+.front .zone-content {
+  background: url(images/BG-front-view-shadow.png)no-repeat scroll 390px -95px #ffffff;
+ -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.not-front.context-resources .zone-content {
+  background: #ffffff;
+}
+
+.not-front.sidebar-second.context-resources .zone-content {
+      background: url(images/BG-sidebar-right-shadow.png) no-repeat scroll 720px top #ffffff;
+}
+
+.block-views-subpage-slideshow-block .views-field-field-body-subpage-slideshow {
+	background:url(images/BG-black-transparency.png) repeat scroll 0 0 transparent;
+	color:#fff;
+	display:block;
+	width:310px;
+	height:90px;
+	position:absolute;
+	top:290px;
+	left:0;
+}
+
+.block-views-subpage-slideshow-block .views-field-field-body-subpage-slideshow {
+	background:url(images/BG-black-transparency.png) repeat scroll 0 0 transparent;
+	color:#fff;
+	display:block;
+	width:310px;
+	height:90px;
+	position:absolute;
+	top:290px;
+	left:0;
+}
+
+.block-views-subpage-slideshow-block .view-subpage-slideshow .views-slideshow-controls-bottom  {
+	background:url(images/BG-black-transparency.png) repeat scroll 0 0 transparent;
+	position:absolute;
+	left: 577px;
+	width:120px;
+	height:35px;
+  top: 360px;
+	z-index:50;
+	padding-right:5px;
+  border-top-left-radius: 28px;
+	-webkit-border-top-left-radius: 28px;
+}
+
+.front .zone-content .block-uni-news-announcements-block h2.block-title {
+  color: #4c4c4c;
+  font-family:'droid_sansbold', Arial,Helvetica,sans-serif; font-weight: normal;
+  font-size: 1.7em;
+  margin-bottom: 0;
+  padding: 15px 0 15px 0;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.front .zone-content .block-uni-news-announcements-block h2.block-title a.inside-uni-button {
+    background:url(images/InsideUNI.png) no-repeat scroll 0 0 transparent;
+    width: 126px;
+    height: 23px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    margin: -6px 10px 0 0;
+    padding: 0;
+}
+
+
+/*Sidebar First*/
+.block-menu.getting-started {
+  background: url(images/BG-getting-started-divider.png) no-repeat scroll  160px 50px transparent;
+  margin-bottom: 0;
+}
+
+.block-menu.getting-started h2.block-title {
+  border-bottom: 1px solid #d5d5d5;    
+  color: #4c4c4c;
+  font-family:'droid_sansbold', Arial,Helvetica,sans-serif; font-weight: normal;
+  font-size: 1.7em;
+  margin-bottom: 00px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  width: 95%;
+}
+
+.block-menu.getting-started ul li {
+  margin: 0 0 8px 0;
+  float: left;
+  width: 160px;
+  height: 40px;
+  padding: 0 5px;
+}
+
+
+.block-menu.getting-started ul li a {
+  display: block;
+}
+
+
+
+.block-menu-info-for-menu #info-for-img img {
+  width: 140px; margin-top: -7px;
+}
+
+ul.insideuni-contact,
+ul.insideuni-contact-2,
+ul.insideuni-contact-3 {
+  float: left;
+    padding-right: 10px;
+  margin-right: 10px;
+}
+
+.not-front.page-node-1338.context-resources .zone-content,
+.not-front.page-node-1340.context-resources .zone-content {
+  background-position: 560px top;
+}
+
+
+.page-node-1338 .block.purple-callout,
+.page-node-1340 .block.purple-callout {
+  float: left;
+  width: 166px;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.page-node-1338 .block.purple-callout img,
+.page-node-1340 .block.purple-callout img {
+}
+
+.page-node-1338 .block-kudos-archive-block-1,
+.page-node-1340 .block-kudos-archive-block-2 {
+  width: 290px;
+  margin-left: 70px;
+  margin-right: 0;
+  float: left;
+}
+
+.page-node-1340 .block-kudos-archive-block-2 {
+  width: 290;
+  margin-left: 10px;
+  margin-right: 0;
+  float: left;
+}
+
+
+.page-node-1338 .block-kudos-archive-block-1 h2.block-title ,
+.page-node-1340 .block-kudos-archive-block-2 h2.block-title {
+  margin-top: -20px;
+}
+
+.page-node-1340 h1#page-title.title,
+.page-node-1338 h1#page-title.title {
+  border-bottom: none;
+  margin-bottom: none;
+  font-size: 2.5em;
+font-family:'droid_sansbold', Arial,Helvetica,sans-serif; font-weight: normal;
+    padding: 28px 0 0 0;
+	
+}
+
+/* CHANGES BY UNI BELOW THIS LINE  */
+
+/* SET MOST FONTS TO DROID SANS REGULAR */
+
+/* SET .block-menu.getting-started h2.block-title  AND  .front .zone-content .block-uni-news-announcements-block h2.block-title {
+ TOP MARGIN TO 15PX */
+
+
+
+/* Changed Getting Started divider image top position from 90px to 50px */
+
+/* Changed .front .zone-content background image top position from -80px to -95px */
+
+#block-block-4 {float: right} /* position Join the Conversation block on homepage */
+
+.block.uni-glance h2.block-title { /* adjust vertical positioning of fact images */
+ margin-bottom: 5px;
+} 
+
+#block-views-uni-at-a-glance-block-1 { 
+  background: url("images/uni_at_a_glance_bg_normal.png") no-repeat scroll 0px 38px transparent;
+}
+
+.region-footer-first p.map {
+  margin-right: 20px;
+}
+
+ul#visiting-left {
+  margin-bottom: 35px;
+  margin-right: 20px;
+  float: left;
+  width: 100px;
+}
+
+ul#visiting-right {
+  width: 125px;
+  margin-right: 0px;
+}
+
+.region-footer-first .block.footer-menu ul li {
+  width: 100%;
+}
+
+ul#footer-left {
+  width: 130px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+ul#footer-right {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+  float: left;
+  width: 290px;
+}
+
+/* added class to body tag on first line */
+
+/* page titles */
+.student-life-bg-image h1#page-title.title,
+.academics-bg-image h1#page-title.title,
+.get-to-know-uni-bg-image h1#page-title.title,
+.high-school-bg-image h1#page-title.title,
+.current-students-bg-image h1#page-title.title,
+.parents-families-bg-image h1#page-title.title,
+.faculty-staff-bg-image h1#page-title.title,
+.inside-uni-bg-image h1#page-title.title,
+.alumni-friends-bg-image h1#page-title.title
+
+ {color: #FFFFFF;}
+
+h1#page-title.title {
+  color: #4B116F;
+}
+
+/* page titles for Inside UNI section */
+.page-node-1338 .block-delta-blocks-page-title,
+.page-node-1340 .block-delta-blocks-page-title {
+  width: 700px !important;
+}
+
+/* LINES 278 AND 289, CHANGED TOP SETTING FOR .block-views-subpage-slideshow-block .views-field-field-body-subpage-slideshow AND  .block-views-subpage-slideshow-block .view-subpage-slideshow .views-slideshow-controls-bottom */
+	
+/* ON .block-views-student-life-block .views-row SET OVERFLOW TO VISIBLE */
+
+/* set height for News & Announcements block on homepage */
+#block-views-uni-news-announcements-block {
+  height: 280px;
+}
+
+/* UNI Search block */
+#block-uni-search-uni-search h2.block-title {
+  font-family:  'droid_sansregular';
+}
+
+#region-user-second {
+  width: 360px;
+  padding-left: 320px;
+}
+
+#block-views-subpage-slideshow-block {
+  margin-bottom: 15px;
+}
+
+.view-feature-story-on-hompage h3 a {font-weight: normal;}
+
+
+/* added bottom padding for page titles, line 45 */
+
+/* In Their Words view */
+.view-in-their-words-videos .video-filter-field {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.view-uni-at-a-glance img {
+  width: 172px;
+}
+
+.front #block-views-featured-events-block {
+  margin-top: 40px;
+}
+
+.front #block-views-snapshots-block {
+  margin-top: 20px;
+}
+
+#block-views-subpage-slideshow-block,
+.views-field-field-slideshow-images img {
+  width: 700px;
+  height: 400px;
+}
+
+
+#block-views-student-life-block-3 .views-field-field-student-life-image img,
+.views-field-field-student-life-image img {
+  width: 214px;
+  height: 132px;
+}
+
+.views-field-field-feature-callout-image img,
+.views-field-field-promotional-callout-image img {
+  width: 220px;
+  height: auto;
+}
+
+.page-node-1338 #block-views-student-life-block-4 .views-field-field-student-life-image img {
+  width: 160px;
+  height: 107px;
+}
+
+.page-node-1338 #block-views-student-life-block-4 .views-field-field-student-life-image img,
+.page-node-1340 #block-views-student-life-block-4 .views-field-field-student-life-image img {
+  width: 160px;
+  height: 107px;
+}
+
+.inside-uni-title p.white-logo {
+  display: block;
+}
+
+.inside-uni-title p.purple-logo {
+  display: none;
+}
+
+.search-form {float: right;}
+

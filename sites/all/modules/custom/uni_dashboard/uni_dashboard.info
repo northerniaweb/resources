@@ -1,0 +1,15 @@
+name = 	UNI Dashboard
+description = Implementation of jQuery Gantt by Marek Bielańczuk, Tait Brown and Leo Pfeifenberger. http://taitems.github.com/jQuery.Gantt/
+core = 7.x
+dependencies[] = libraries
+dependencies[] = node
+dependencies[] = date
+dependencies[] = taxonomy
+dependencies[] = ctools
+dependencies[] = nodequeue
+package = Other
+configure = admin/config/uni_dashboard
+files[] = uni_dashboard.info
+files[] = uni_dashboard.module
+files[] = uni_dashboard.admin.inc
+files[] = uni_dashboard.page.inc

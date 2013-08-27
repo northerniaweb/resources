@@ -1,0 +1,87 @@
+#region-page-top, /* admin toolbars */
+#logo, /* UNI logo */
+#section-header, 
+#section-footer,
+#block-block-8 /* InsideUNI page title graphic */,
+#block-block-5 /* Join the Conversation, interior pages */,
+#info-for-img /* Rollover images for Info For menu*/,
+#block-views-snapshots-block /* Snapshots, homepage*/,
+#block-block-4 /* Join the Conversation, homepage */,
+#block-views-subpage-slideshow-block /* Slideshow on interior pages*/,
+#block-views-student-life-block-3 img /* Boxes images */,
+#block-views-student-life-block img,
+#block-views-student-life-block-1 img,
+#block-views-student-life-block-2 img,
+#block-views-student-life-block-4 img,
+.insideuni-bigblock img,
+#block-views-5f0fbbe02645391cb29c895149038323 img /* Faculty & Staff insideUNI */ {
+  display: none !important;
+}
+
+a {
+  color: #000000 !important;
+  text-decoration: underline !important;
+}
+
+a[href^="http://"]:after {
+  content: " [" attr(href) "]";
+}
+
+a[href^="/resources"]:after {
+  content: " (http://www.uni.edu" attr(href) ")";
+}
+
+* {
+  background-image: none !important;
+  border-color: #000000 !important;
+  color: #000000 !important;
+}
+
+#region-content {
+  margin-left: 0px !important;
+  overflow: visible !important;
+  width: 90% !important;
+}
+
+.page-node-1822 .block-views .view-featured-news .view-display-id-attachment_1 h2.block-title, .panther h2.block-title {
+  background-image: none !important;
+  padding-left: 0px !important;
+}
+
+body, h1, h2, h3, ol, ul, div {
+  overflow: visible;
+}
+
+
+/* top images on homepage */
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-1,
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-2,
+.front .region-preface-first-inner .view-feature-story-on-hompage .views-row-3,
+.front .region-preface-first-inner .view-marketing-messages .views-row-1,
+.front .region-preface-first-inner .view-marketing-messages .views-row-2,
+.front .region-preface-first-inner .view-marketing-messages .views-row-3,
+.front .region-preface-first-inner .view-marketing-messages .views-row-4 {
+  position: static !important;
+  margin-bottom: 10px !important;
+}
+
+#zone-postscript {
+  margin-top: 30px;
+}
+
+#block-views-featured-events-block,
+#block-menu-menu-getting-started,
+#block-menu-menu-info-for-menu,
+#region-sidebar-first,
+.block-menu-info-for-menu ul {
+  width: 100% !important;
+}
+
+.page-break {
+  page-break-before: always; 
+}
+
+block-views-feature-story-on-hompage-block {
+  margin-top: -300px !important;
+}
+

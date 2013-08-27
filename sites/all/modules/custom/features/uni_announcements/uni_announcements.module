@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Announcements feature.
+ */
+
+include_once 'uni_announcements.features.inc';

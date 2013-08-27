@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Code for the UNI At A Glance feature.
+ */
+
+include_once 'uni_glance.features.inc';
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function uni_glance_jcarousel_skin_info() {
+  $skins = array();
+
+  $skins['uni-glance'] = array(
+    'title' => t('UNI'),
+    'file' => 'skins/uni/jcarousel-uni-glance.css',
+  );
+
+  return $skins;
+}
+

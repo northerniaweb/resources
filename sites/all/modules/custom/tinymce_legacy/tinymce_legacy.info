@@ -1,0 +1,4 @@
+name = TinyMCE Legacy Output
+description = Enables the option to use the TinyMCE Legacy Output Plugin
+core = 7.x
+dependencies[] = wysiwyg

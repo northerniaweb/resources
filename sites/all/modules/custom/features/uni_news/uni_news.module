@@ -1,0 +1,123 @@
+<?php
+/**
+ * @file
+ * Code for the UNI News feature.
+ */
+
+include_once 'uni_news.features.inc';
+
+/**
+ * Implements hook_menu
+ */
+function uni_news_menu() {
+  $items['uni-in-the-news'] = array(
+    'title' => t("UNI in the News"),
+    'page callback' => 'uni_news_page',
+    'access callback' => TRUE,
+    'page arguments' => array(),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_node_presave
+ */
+function uni_news_node_presave($node) {
+  // Workaround for Feeds module setting text format to Plain Text instead of Full HTML or Filtered HTML
+  if ($node->type == 'news') {
+      $node->body['und'][0]['format'] = 'full_html';
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function uni_news_block_info() {
+  $blocks = array();
+  $blocks['uni_news'] = array(
+    'info' => t('UNI in the News'),
+  );
+ 
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function uni_news_block_view($delta='') {
+  $block = array();
+ 
+  switch($delta) {
+    case 'uni_news' :
+      $block['content'] = uni_news_view();
+      $block['title'] = t("UNI in the News");
+      break;
+  }
+ 
+  return $block;
+}
+ 
+/**
+ * Custom function to assemble renderable array for block content.
+ * Returns a renderable array with the block content.
+ * @return
+ *   returns a renderable array of block content.
+ */
+function uni_news_view() {
+  $block = array();
+
+  $story = '';
+  
+  $page = drupal_http_request('http://monitorxml.marketwire.com/widget/iframe.cfm?cachetime=5&sact=114796&srid=452525832&scrolling=no');
+  $data = $page->data;
+  $start = strpos($data,'<div class="newsclip">');
+  $stripped = substr($data,$start + 22);
+  $clips = explode('<div class="newsclip">',$stripped);
+  for ($i=0;$i<3;$i++) {
+   $clip = $clips[$i];
+   $story .= '<div class="newsclip">' . $clip;
+  }
+ 
+  // Block output in HTML with div wrapper
+  $block = array(
+    'story' => array(
+      '#prefix' => '<div class="uni-news-content">',
+      '#type' => 'markup',
+      '#markup' => $story,
+      '#suffix' => '</div>',
+    ),
+    'link' => array(
+      '#prefix' => '<div class="uni-news-link">',
+      '#type' => 'markup',
+      '#markup' => l(t("More Articles"), 'uni-in-the-news'),
+      '#suffix' => '</div>',
+    ),
+  );
+ 
+  return $block;
+}
+
+/**
+ * Custom function to assemble renderable array for page content.
+ */
+function uni_news_page() {
+  return uni_news_get_content();
+}
+
+/**
+ * Custom fucntion to generate content from news
+ */
+function uni_news_get_content($limit = 0) {
+
+  // Origin of content to scrape
+  $page = drupal_http_request('http://monitorxml.marketwire.com/widget/iframe.cfm?cachetime=5&sact=114796&srid=452525832&scrolling=no');
+
+  // Convert data to string format
+  $data = (string) $page->data;
+  
+  // get all contents inside the body tags
+  preg_match("/<body.*?>(.*?)<\/body>/is", $data, $matches);
+
+  return $matches[1];
+
+}

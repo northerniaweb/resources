@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UNI Student Life feature.
+ */
+
+include_once 'uni_student_life.features.inc';

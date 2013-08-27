@@ -1,0 +1,33 @@
+<?php
+function video_filter_unihelix_codec_info() {
+$codecs['unihelix'] = array(
+  'name' => t('UNI Video Server'),
+  'sample_url' => 'rtmp://mm1.uni.edu/1/subdir/samplevideo.mp4',
+  'callback' => 'video_filter_unihelix',
+  'regexp' => array(
+                  '/media22\.uni\.edu\/1\/([a-zA-Z0-9_\/]+)\/([a-zA-Z0-9\._]+)/',
+                  '/mm1\.uni\.edu\/1\/([a-zA-Z0-9_\/]+)\/([a-zA-Z0-9\._]+)/',
+                ),
+  'ratio' => 16 / 9,
+);
+return $codecs;
+}
+
+function video_filter_unihelix($video) {
+  $video['source'] = 'http://www.uni.edu/embed/player.swf';
+
+  $directory = $video['codec']['matches'][1];
+  $file = $video['codec']['matches'][2];
+
+  $params = array(
+'allowscriptaccess' => 'always',
+);
+  $params['flashvars'] = 'file=' . $file;
+  $params['flashvars'] .= '&streamer=rtmp://mm1.uni.edu/1/' . $directory ;
+  $params['flashvars'] .= '&type=rtmp';
+  $params['flashvars'] .= '&width=' . $video['width'] ;
+  $params['flashvars'] .= '&height=' . $video['height'] ;
+  $params['flashvars'] .= '&autostart=false';
+
+  return video_filter_flash($video, $params);
+}
